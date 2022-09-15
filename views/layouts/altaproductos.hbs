@@ -1,0 +1,115 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico" />
+
+    <title>Signin Template for Bootstrap</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.0/examples/sign-in/"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom styles for this template -->
+    <link
+      href="https://getbootstrap.com/docs/4.0/examples/sign-in/signin.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="text-center">
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">MarketValley</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/productos">Listado de Productos
+                <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/altaproductos">Alta de Productos</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <form class="form-signin" method="POST" action="/api/productos">
+      <img
+        class="mb-4"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLXiNGqhbRHI6bdX_0hpPThT9FCNUc9jbWxg&usqp=CAU"
+        alt=""
+        width="72"
+        height="72"
+      />
+      <h1 class="h3 mb-3 font-weight-normal">Alta de Productos</h1>
+      <label for="inputNombre" class="sr-only">Nombre</label>
+      <input
+        type="text"
+        id="inputNombre"
+        class="form-control"
+        placeholder="Nombre"
+        required
+        autofocus
+        name="nombre"
+      />
+
+      <label for="inputPrecio" class="sr-only">Precio</label>
+      <input
+        type="text"
+        id="inputPrecio"
+        class="form-control"
+        placeholder="Precio"
+        required
+        autofocus
+        name="precio"
+      />
+
+      <label for="inputURLImagen" class="sr-only">URL Imagen</label>
+      <input
+        type="text
+        id="inputURLImagen"
+        class="form-control"
+        placeholder="URL Imagen"
+        required
+        name="urlimagen"
+      />
+      <br>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">
+        Agregar
+      </button>
+    </form>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
